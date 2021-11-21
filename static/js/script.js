@@ -2,7 +2,7 @@
 var currentUser = "O";
 
 function handleClickEvent(event) {
-  if (event.target.innerHTML.includes("O") || event.target.innerHTML.includes("X")) return;
+  if (event.target.innerHTML.includes("O") || event.target.innerHTML.includes("X" )) return;
 
   event.target.innerHTML = currentUser;
 
