@@ -18,6 +18,7 @@
         <table>
             <thead>
               <tr>
+                <!-- Setando o estilo dos botões, a classe botões, o ID e chamando uma função, no momento do clique do botão, que irá alterar o preenchimento de texto do botão -->
                 <td><button style="font-size : 80px; width: 400%; height: 400px;height:200px;width:200px" class="buttons" id="btn1"  onclick="handleClickEvent(event)">&nbsp</td>
                 <td><button style="font-size : 80px; width: 400%; height: 400px;height:200px;width:200px" class="buttons" id="btn2"  onclick="handleClickEvent(event)">&nbsp</td>
                 <td><button style="font-size : 80px; width: 400%; height: 400px;height:200px;width:200px" class="buttons" id="btn3"  onclick="handleClickEvent(event)">&nbsp</td>
@@ -25,18 +26,22 @@
             </thead>
             <tbody>
               <tr>
+                <!-- Setando o estilo dos botões, a classe botões, o ID e chamando uma função, no momento do clique do botão, que irá alterar o preenchimento de texto do botão -->        
                 <td><button style="font-size : 80px; width: 400%; height: 400px;height:200px;width:200px" class="buttons" id="btn4"  onclick="handleClickEvent(event)">&nbsp</td>
                 <td><button style="font-size : 80px; width: 400%; height: 400px;height:200px;width:200px" class="buttons" id="btn5"  onclick="handleClickEvent(event)">&nbsp</td>
                 <td><button style="font-size : 80px; width: 400%; height: 400px;height:200px;width:200px" class="buttons" id="btn6"  onclick="handleClickEvent(event)">&nbsp</td>
               </tr>
               <tr>
-                <td><button style="font-size : 80px; width: 400%; height: 400px;height:200px;width:200px" class="buttons" id="btn7"  onclick="handleClickEvent(event)">&nbsp</td>
+                <!-- Setando o estilo dos botões, a classe botões, o ID e chamando uma função, no momento do clique do botão, que irá alterar o preenchimento de texto do botão -->
+                <td><button style="font-size : 80px; width: 400%; height: 400px;height:200px;width:200px" class="buttons" id="btn7"  onclick="handleClickEvent(event), verify()">&nbsp</td>
                 <td><button style="font-size : 80px; width: 400%; height: 400px;height:200px;width:200px" class="buttons" id="btn8"  onclick="handleClickEvent(event)">&nbsp</td>
                 <td><button style="font-size : 80px; width: 400%; height: 400px;height:200px;width:200px" class="buttons" id="btn9"  onclick="handleClickEvent(event)">&nbsp</td>
               </tr>
               
             </tbody>
             </table>
+
+            <!-- Carregando a música que é utilizada no arquivo -->
             <h1>Gostaria de ouvir uma música enquanto joga? Dê play!</h1>
         <audio preload="metadata" autoplay controls loop> 
           <source src="midia/Never Gonna Give You Up - 8 Bit Universe (320 kbps).mp3" autoplay type="audio/mpeg"> 
