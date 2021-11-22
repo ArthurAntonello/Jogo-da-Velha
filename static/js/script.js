@@ -1,7 +1,5 @@
-
+// Fixando o jogador"O" como primeiro a jogar
 var currentUser = "O";
-
-
 
 //Esta função está atribuindo que o proximo jogador não possa alterar o que o outro jogador preencheu e mudando o preenchimento de texto do botão selecionado
 function handleClickEvent(event) {
@@ -12,6 +10,7 @@ function handleClickEvent(event) {
 
   window.setTimeout(() => verify(user), 300) //adicionando um delay de 500s antes de aplicar o verify, para aparecer o resultado antes de verificar quem é o ganhador
 
+  // Decisao para o atual jogador
   if (currentUser === "O") {
     currentUser = "X";
   } else {
@@ -23,6 +22,7 @@ function handleClickEvent(event) {
   currentPlayerH1.innerHTML = "Jogador Atual: " + currentUser
 }
 
+// Verificando o user
 function verify(user) {
 
   var casas = document.getElementsByTagName('input'); //pega a lista de casas do tabuleiro do jogo
@@ -64,7 +64,7 @@ function verify(user) {
 
     // Diagonal 2- verificar igualdade das casas e, se pelo menos uma for diferente de "", todas as outras são iguais dai
   } else if (casas[2].value == casas[4].value && casas[4].value == casas[6].value && casas[2].value !== "") {
-    window.alert('O vencedor é ' + user)
+    window.alert('O vencedor é ' + user,)
     location.reload()
   }
   // Se todas forem preenchidas, mas nenhuma for igual, deu velha
@@ -79,9 +79,12 @@ function verify(user) {
     casas[7].value !== "" &&
     casas[8].value !== ""
   ) {
+    // Alerta caso o jogo resulte em empate
     window.alert('DEU VELHA! ')
     location.reload()
   }
+
+
 }
 
 

@@ -14,6 +14,7 @@
         
     </head>
     <body>
+      <!-- Linha que informa o jogador da rodada -->
       <h1 id="currentPlayer">Jogador Atual: O</h1>
         <table>
             <thead>
@@ -40,8 +41,10 @@
               
             </tbody>
             </table>
+            <!-- Botão de reset -->
+            <button onclick="location.reload()" class="resetar">Resetar</button>
 
-            <!-- Carregando a música que é utilizada no arquivo -->
+            <!-- Carregando a música que é utilizada no arquivo, é utilizado duas extensões, mp3 e ogg, para melhor compatibilidade -->
             <h1>Gostaria de ouvir uma música enquanto joga? Dê play!</h1>
         <audio preload="metadata" autoplay controls loop> 
           <source src="midia/Never Gonna Give You Up - 8 Bit Universe (320 kbps).mp3" autoplay type="audio/mpeg"> 
